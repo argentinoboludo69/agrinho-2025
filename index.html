@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2025 - Festejando a conexão campo cidade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(34,139,34,0.9) 0%, rgba(70,130,180,0.9) 100%);
+        }
+        
+        .section-divider {
+            height: 100px;
+            background: linear-gradient(to right, #228B22, #4682B4);
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+        }
+        
+        .flip-card {
+            perspective: 1000px;
+        }
+        
+        .flip-card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .flip-card-front, .flip-card-back {
+            backface-visibility: hidden;
+        }
+        
+        .flip-card-back {
+            transform: rotateY(180deg);
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .rural-icon {
+            color: #228B22;
+        }
+        
+        .urban-icon {
+            color: #4682B4;
+        }
+        
+        .connection-icon {
+            color: #9370DB;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full z-50 shadow-md">
+        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-3">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a href="#" class="flex items-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" class="mr-3 h-8" alt="Agrinho Logo" />
+                    <span class="self-center text-xl font-semibold whitespace-nowrap text-green-700">Agrinho 2025</span>
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <button class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 lg:px-5 lg:py-2.5 mr-2 focus:outline-none transition duration-300">
+                        Participe
+                    </button>
+                    <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Abrir menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="#home" class="block py-2 pr-4 pl-3 text-green-700 rounded lg:bg-transparent lg:p-0" aria-current="page">Início</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-700 lg:p-0">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#interdependence" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-700 lg:p-0">Interdependência</a>
+                        </li>
+                        <li>
+                            <a href="#culture" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-700 lg:p-0">Cultura</a>
+                        </li>
+                        <li>
+                            <a href="#sustainability" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-700 lg:p-0">Sustentabilidade</a>
+                        </li>
+                        <li>
+                            <a href="#gallery" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-700 lg:p-0">Galeria</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 hero-gradient min-h-screen flex items-center justify-center text-white">
+        <div class="container mx-auto px-6 py-16 md:py-24 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-pulse">
+                    <span class="text-yellow-300">Festejando</span> a conexão <span class="block">Campo & Cidade</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-10">
+                    Descubra como essas duas realidades se complementam e fortalecem nosso futuro sustentável
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#about" class="px-8 py-3 bg-white text-green-700 font-bold rounded-full hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                        Explorar
+                    </a>
+                    <a href="#gallery" class="px-8 py-3 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-green-700 transition duration-300 transform hover:scale-105">
+                        Galeria
+                    </a>
+                </div>
+            </div>
+            <div class="mt-16 flex justify-center">
+                <div class="animate-bounce">
+                    <i class="fas fa-chevron-down text-3xl text-white"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <div class="section-divider"></div>
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    <span class="text-green-700">Conexão</span> que <span class="text-blue-600">Transforma</span>
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-green-600 to-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    O campo e a cidade são realidades que se complementam, cada uma com suas características únicas, mas profundamente interligadas. Essa conexão é essencial para o desenvolvimento sustentável do nosso país.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-tractor"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Campo</h3>
+                    <p class="text-gray-600">
+                        Fonte de alimentos, matérias-primas e tradições que nutrem não apenas o corpo, mas também a alma da nação.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Cidade</h3>
+                    <p class="text-gray-600">
+                        Centro de inovação, tecnologia e cultura que processa, distribui e valoriza os produtos do campo.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-purple-600 text-4xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Conexão</h3>
+                    <p class="text-gray-600">
+                        Relação simbiótica onde ambos se beneficiam mutuamente, criando um ciclo virtuoso de desenvolvimento.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interdependence Section -->
+    <div class="section-divider"></div>
+    <section id="interdependence" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    <span class="text-green-700">Interdependência</span> Vital
+                </h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    O campo e a cidade mantêm uma relação de mútua dependência, onde cada um contribui com o que tem de melhor.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="mb-8">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-seedling text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Alimentação</h3>
+                                <p class="text-gray-600">
+                                    O campo produz mais de 70% dos alimentos consumidos nas cidades, garantindo segurança alimentar para toda a população.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-industry text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Matérias-primas</h3>
+                                <p class="text-gray-600">
+                                    A agricultura e pecuária fornecem matérias-primas essenciais para indústrias urbanas, como têxtil, farmacêutica e construção civil.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-bolt text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Energia</h3>
+                                <p class="text-gray-600">
+                                    O campo produz energia renovável (biocombustíveis, eólica, solar) que abastece as cidades, reduzindo a dependência de fontes não renováveis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="relative h-96 bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-green-600 to-blue-600 opacity-20"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center p-8">
+                                <i class="fas fa-exchange-alt text-6xl text-white opacity-30 mb-4"></i>
+                                <h3 class="text-2xl font-bold text-white opacity-90">Fluxo Contínuo</h3>
+                                <p class="text-white opacity-70 mt-2">
+                                    Campo e cidade em constante troca de recursos, conhecimentos e valores
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <div class="section-divider"></div>
+    <section id="culture" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    <span class="text-green-700">Trocas</span> Culturais
+                </h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    A relação campo-cidade vai além da economia, envolvendo ricas trocas culturais que enriquecem nossa identidade nacional.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flip-card h-80">
+                    <div class="flip-card-inner h-full rounded-xl shadow-lg">
+                        <div class="flip-card-front bg-green-50 rounded-xl p-6 flex flex-col items-center justify-center">
+                            <i class="fas fa-music text-5xl text-green-600 mb-4"></i>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Música</h3>
+                            <p class="text-center text-gray-600">
+                                Do sertanejo ao funk, a música brasileira é fruto dessa fusão cultural.
+                            </p>
+                        </div>
+                        <div class="flip-card-back bg-green-600 rounded-xl p-6 flex flex-col items-center justify-center text-white">
+                            <p class="text-center">
+                                Ritmos rurais como o forró e a moda de viola influenciaram gêneros urbanos, criando uma rica diversidade musical.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card h-80">
+                    <div class="flip-card-inner h-full rounded-xl shadow-lg">
+                        <div class="flip-card-front bg-blue-50 rounded-xl p-6 flex flex-col items-center justify-center">
+                            <i class="fas fa-utensils text-5xl text-blue-600 mb-4"></i>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Culinária</h3>
+                            <p class="text-center text-gray-600">
+                                Ingredientes rurais transformados pela criatividade urbana.
+                            </p>
+                        </div>
+                        <div class="flip-card-back bg-blue-600 rounded-xl p-6 flex flex-col items-center justify-center text-white">
+                            <p class="text-center">
+                                Pratos típicos como feijoada e pão de queijo são exemplos dessa fusão, valorizando produtos locais com técnicas refinadas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card h-80">
+                    <div class="flip-card-inner h-full rounded-xl shadow-lg">
+                        <div class="flip-card-front bg-purple-50 rounded-xl p-6 flex flex-col items-center justify-center">
+                            <i class="fas fa-hands-helping text-5xl text-purple-600 mb-4"></i>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Festivais</h3>
+                            <p class="text-center text-gray-600">
+                                Celebrações que unem tradição e modernidade.
+                            </p>
+                        </div>
+                        <div class="flip-card-back bg-purple-600 rounded-xl p-6 flex flex-col items-center justify-center text-white">
+                            <p class="text-center">
+                                Festas juninas, rodeios e feiras agropecuárias são espaços onde campo e cidade compartilham cultura e valores.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <div class="section-divider"></div>
+    <section id="sustainability" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    <span class="text-green-700">Sustentabilidade</span> Compartilhada
+                </h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    A conexão campo-cidade é fundamental para desenvolver práticas sustentáveis que beneficiam ambos os ambientes.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="flex mb-6">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-recycle text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Agricultura Urbana</h3>
+                                <p class="text-gray-600">
+                                    Hortas comunitárias e telhados verdes nas cidades aproximam os moradores da produção de alimentos, reduzindo o transporte.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex mb-6">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-truck text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Cadeias Curtas</h3>
+                                <p class="text-gray-600">
+                                    Feiras diretas do produtor reduzem intermediários, garantindo melhor preço ao agricultor e alimentos mais frescos aos urbanos.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-leaf text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Agroecologia</h3>
+                                <p class="text-gray-600">
+                                    Práticas agrícolas sustentáveis preservam o meio rural e garantem alimentos saudáveis para as cidades.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 lg:order-2">
+                    <div class="bg-gradient-to-br from-green-600 to-blue-600 rounded-xl p-8 text-white shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4">Benefícios Compartilhados</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mr-3 mt-1 text-yellow-300"></i>
+                                <span>Redução do desperdício de alimentos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mr-3 mt-1 text-yellow-300"></i>
+                                <span>Menor impacto ambiental no transporte</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mr-3 mt-1 text-yellow-300"></i>
+                                <span>Valorização dos pequenos produtores</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mr-3 mt-1 text-yellow-300"></i>
+                                <span>Conscientização sobre origem dos alimentos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mr-3 mt-1 text-yellow-300"></i>
+                                <span>Preservação de saberes tradicionais</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <div class="section-divider"></div>
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    <span class="text-green-700">Galeria</span> da Conexão
+                </h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Imagens que ilustram a bela e produtiva relação entre o campo e a cidade.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-64">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute inset-0 flex items-end p-6">
+                        <h3 class="text-white text-xl font-bold">Agricultura Familiar</h3>
+                    </div>
+                    <div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-20 transition duration-500"></div>
+                    <i class="fas fa-search-plus absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                    <div class="h-full w-full bg-green-200 flex items-center justify-center">
+                        <i class="fas fa-tractor text-6xl text-green-600"></i>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-64">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute inset-0 flex items-end p-6">
+                        <h3 class="text-white text-xl font-bold">Feiras Urbanas</h3>
+                    </div>
+                    <div class="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-20 transition duration-500"></div>
+                    <i class="fas fa-search-plus absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                    <div class="h-full w-full bg-blue-200 flex items-center justify-center">
+                        <i class="fas fa-store text-6xl text-blue-600"></i>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-64">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute inset-0 flex items-end p-6">
+                        <h3 class="text-white text-xl font-bold">Tecnologia no Campo</h3>
+                    </div>
+                    <div class="absolute inset-0 bg-purple-600 opacity-0 group-hover:opacity-20 transition duration-500"></div>
+                    <i class="fas fa-search-plus absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                    <div class="h-full w-full bg-purple-200 flex items-center justify-center">
+                        <i class="fas fa-robot text-6xl text-purple-600"></i>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-64">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute inset-0 flex items-end p-6">
+                        <h3 class="text-white text-xl font-bold">Cultura Rural</h3>
+                    </div>
+                    <div class="absolute inset-0 bg-yellow-600 opacity-0 group-hover:opacity-20 transition duration-500"></div>
+                    <i class="fas fa-search-plus absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                    <div class="h-full w-full bg-yellow-200 flex items-center justify-center">
+                        <i class="fas fa-guitar text-6xl text-yellow-600"></i>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-64">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute inset-0 flex items-end p-6">
+                        <h3 class="text-white text-xl font-bold">Transporte Sustentável</h3>
+                    </div>
+                    <div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-20 transition duration-500"></div>
+                    <i class="fas fa-search-plus absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                    <div class="h-full w-full bg-green-200 flex items-center justify-center">
+                        <i class="fas fa-truck-pickup text-6xl text-green-600"></i>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-64">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute inset-0 flex items-end p-6">
+                        <h3 class="text-white text-xl font-bold">Turismo Rural</h3>
+                    </div>
+                    <div class="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-20 transition duration-500"></div>
+                    <i class="fas fa-search-plus absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                    <div class="h-full w-full bg-blue-200 flex items-center justify-center">
+                        <i class="fas fa-umbrella-beach text-6xl text-blue-600"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <div class="section-divider"></div>
+    <section class="py-20 bg-gradient-to-r from-green-600 to-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Participe do Agrinho 2025!</h2>
+            <p class="text-xl mb-10 max-w-3xl mx-auto">
+                Junte-se a nós na celebração dessa conexão que alimenta, inspira e desenvolve nosso país.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="px-8 py-3 bg-white text-green-700 font-bold rounded-full hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                    Inscreva-se
+                </button>
+                <button class="px-8 py-3 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-green-700 transition duration-300 transform hover:scale-105">
+                    Saiba Mais
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Agrinho 2025</h3>
+                    <p class="text-gray-400">
+                        Celebrando a conexão entre campo e cidade para um futuro mais sustentável e integrado.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Início</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">Sobre</a></li>
+                        <li><a href="#interdependence" class="text-gray-400 hover:text-white transition">Interdependência</a></li>
+                        <li><a href="#culture" class="text-gray-400 hover:text-white transition">Cultura</a></li>
+                        <li><a href="#sustainability" class="text-gray-400 hover:text-white transition">Sustentabilidade</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white transition">Galeria</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contato</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-3 mt-1"></i>
+                            <span>Av. das Nações, 123 - Centro, Curitiba/PR</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mr-3 mt-1"></i>
+                            <span>(41) 1234-5678</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mr-3 mt-1"></i>
+                            <span>contato@agrinho2025.org.br</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Redes Sociais</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-600 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-400 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-600 transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    &copy; 2025 Agrinho - Todos os direitos reservados
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Termos de Uso</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-green-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.querySelector('[data-collapse-toggle="mobile-menu-2"]');
+        const mobileMenu = document.getElementById('mobile-menu-2');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
